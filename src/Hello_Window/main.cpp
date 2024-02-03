@@ -34,14 +34,14 @@ int main()
 
     while (!glfwWindowShouldClose(window))
     {
-        //ÊäÈë
+        //è¾“å…¥
         processInput(window);
 
-        //äÖÈ¾Ö¸Áî
+        //æ¸²æŸ“æŒ‡ä»¤
         glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
 
-        //¼ì²é²¢µ÷ÓÃÊÂ¼ş£¬½»»»»º³å
+        //æ£€æŸ¥å¹¶è°ƒç”¨äº‹ä»¶ï¼Œäº¤æ¢ç¼“å†²
         glfwPollEvents();
         glfwSwapBuffers(window);
         
@@ -53,7 +53,7 @@ int main()
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
-    std::cout << "´°¿Ú´óĞ¡¸Ä±ä:" << std::endl
+    std::cout << "çª—å£å¤§å°æ”¹å˜:" << std::endl
         << "width=" << width << "\theight=" << height << std::endl;
     glViewport(0, 0, width, height);
 }
